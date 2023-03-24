@@ -1,0 +1,70 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap";
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: $font-family_1;
+	background-color: $background-color_1;
+	text-align: center;
+	font-weight: bolder;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+header {
+	background-color: $background-color_2;
+	font-size: large;
+	display: grid;
+	justify-content: center;
+	color: $color_1;
+	border: 3px solid rgb(148, 46, 243);
+	grid-area: header;
+}
+nav {
+	background-color: $background-color_3;
+	border: 3px solid rgb(252, 84, 140);
+	grid-area: nav;
+	ul {
+		li {
+			list-style-type: none;
+		}
+	}
+}
+main {
+	background-color: $background-color_2;
+	color: $color_2;
+	border: 3px solid rgb(148, 46, 243);
+	grid-area: main;
+}
+footer {
+	background-color: $background-color_3;
+	border: 3px solid rgb(252, 84, 140);
+	grid-area: footer;
+}
+section {
+	background-color: $background-color_3;
+	border: 3px solid rgb(252, 84, 140);
+	grid-area: section;
+}
+a {
+	color: $color_3;
+	text-decoration: none;
+}
+h2 {
+	color: $color_4;
+}
+h3 {
+	color: $color_2;
+}
+img {
+	border: 3px solid rgb(170, 18, 76);
+}
+iframe {
+	border: 3px solid rgb(172, 0, 66);
+}
+.grilla {
+	display: grid;
+	gap: 20px;
+	grid-template-areas: "header" "nav" "main" "section" "footer";
+}

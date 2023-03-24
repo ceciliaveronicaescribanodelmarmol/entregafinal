@@ -1,0 +1,14 @@
+@media (min-width:1024px) {
+	.boton {
+		padding: 10px;
+		margin: 10px 150px;
+		border: 04px;
+	}
+	.animacion {
+		&:hover {
+			transform: scale(2);
+		}
+		transition-property: all;
+		transition-duration: 2s;
+	}
+}
